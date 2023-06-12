@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    appearance: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222;
+    width: 100%;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: 'Amore';
+    src: url('font/Amore.otf') format('opentype');
+}
+
+h1{
+    color: rgb(230, 21, 21);
+    font-size: 2.5rem;
+    font-family: 'Amore';
+    text-align: center;
+    -webkit-text-stroke: 0.5px white;
+    padding: 100px 10px 10px 10px;
+    animation: neon .2s ease-in-out infinite;
+}
+
+#text{
+    font-size: 1.3em;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 50px rgb(255, 0, 242);
+    text-align: justify;
+    padding: 20px;
+    color: rgb(201, 40, 67);
+}
+
+@keyframes neon{
+    from{
+        color: rgb(255, 255, 255);
+    }
+    to{
+       color: rgb(201, 40, 67);
+       animation-delay: 0;
+    }
+}
